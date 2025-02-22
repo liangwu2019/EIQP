@@ -3,7 +3,7 @@ EIQP is designed to solve real-time convex quadratic programming (QP), **includi
 
 In real-time scenarios, QP (or LP) is always solved repeatedly at each sampling time (feedback time), thus we need to ensure that the employed QP (or LP) algorithm can 100% return an optimal solution within a predefined optimality level (unlike other QP (or LP) solvers set a maximum iteration, a cheating approach) or detect the possible infeasibility before the next sampling time. 
 
-This execution time certificate remains an open challenging problem for decades. The iteration complexity of EIQP is proved to be exact (rather the upper bound), simple-calculated, and data-independent, with the value 
+This execution time certificate remains an open challenging problem for decades. The iteration complexity of EIQP is proved to be exact, simple-calculated, and data-independent, with the value 
 
 **$\left\lceil\frac{\log(\frac{n+1}{\epsilon})}{-\log(1-\frac{0.414213}{\sqrt{n+1}})}\right\rceil$** 
 
